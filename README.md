@@ -33,7 +33,7 @@ Bei dieser Belegarbeit wurden keine KI-Tools für die Code generierung genutzt.
 ## Abgabeinhalte
 
 - Readme.md
-- Bilder zur Dokumentation
+- Bilder 3 zur Dokumentation
 - save.txt
 - beleg.pro
 - 23 .h Dateien
@@ -50,6 +50,18 @@ Bei dieser Belegarbeit wurden keine KI-Tools für die Code generierung genutzt.
 
 ```bash
 sudo qmake
+```
+
+Dadurch werden alle QT Relevanten Dateien vorbereitet und erstellt. Das beinhaltet z.B. alle .ui Dateien.
+
+```bash
 sudo make
+```
+
+Hiermit wird eine ausführbare Datei erstellt.
+
+```bash
 ./beleg
 ```
+
+Damit wird das Projekt ausgeführt.
