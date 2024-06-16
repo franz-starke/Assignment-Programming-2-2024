@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>759</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lableDashboard">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>30</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dashboard&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPersonen">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Personen Liste&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelMedien">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>80</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Medien Liste&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="personListWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>371</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="mediaListWidget">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>120</y>
+      <width>371</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lableVerleihe">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>270</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Verleihe&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createPersonBTN">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Neue Person Erstellen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createMediaBTN">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>200</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Neues Medium Erstellen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="borrowBTN">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>690</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Verleihen</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="givebackBTN">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>690</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zurückgeben</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidgetBorrow">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>310</y>
+      <width>771</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+    <column>
+     <property name="text">
+      <string>PID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Person Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>MID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Medien Typ</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Medien Titel</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Medien Autor</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPersonen">
+    <property name="title">
+     <string>Personen</string>
+    </property>
+    <addaction name="actionErstellenPerson"/>
+    <addaction name="actionVerwaltenPersonen"/>
+   </widget>
+   <widget class="QMenu" name="menuMedien">
+    <property name="title">
+     <string>Medien</string>
+    </property>
+    <addaction name="actionErstellenMedium"/>
+    <addaction name="actionVerwaltenMedien"/>
+   </widget>
+   <widget class="QMenu" name="menuVerwaltung">
+    <property name="title">
+     <string>Verwaltung</string>
+    </property>
+    <addaction name="actionAusleihen"/>
+    <addaction name="actionZur_ckgeben"/>
+   </widget>
+   <addaction name="menuPersonen"/>
+   <addaction name="menuMedien"/>
+   <addaction name="menuVerwaltung"/>
+  </widget>
+  <action name="actionErstellenPerson">
+   <property name="text">
+    <string>Erstellen</string>
+   </property>
+  </action>
+  <action name="actionErstellenMedium">
+   <property name="text">
+    <string>Erstellen</string>
+   </property>
+  </action>
+  <action name="actionVerwaltenMedien">
+   <property name="text">
+    <string>Verwalten</string>
+   </property>
+  </action>
+  <action name="actionVerwaltenPersonen">
+   <property name="text">
+    <string>Verwalten</string>
+   </property>
+  </action>
+  <action name="actionAusleihen">
+   <property name="text">
+    <string>Ausleihen</string>
+   </property>
+  </action>
+  <action name="actionZur_ckgeben">
+   <property name="text">
+    <string>Zurückgeben</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

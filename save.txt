@@ -1,0 +1,4 @@
+3
+4
+1~Hans~Otto~33;2~Erik~Fischer~36;3~Egon~Ehrlich~63;
+1~Buch~Das Buch~Der Autor~3~41;3~DVD~Die DVD~Der Autor~2~40.44~37;4~Blueray~Die Blueray~Der Autor~3~27.02~27;5~CD~Die CD~Der Autor~3~28;
